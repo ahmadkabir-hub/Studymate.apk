@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik</title>
+    <link rel="stylesheet" href="css/statistik.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<header class="office-header">
+    <div class="nav-container">
+        <a href="#" class="logo">Kelompok<span>kosong3</span></a>
+        <!-- Menu Navigasi -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tugas.html" class="nav-link">Tugas</a></li>
+                <li><a href="monitoring.html" class="nav-link">Monitoring</a></li>
+                <li><a href="statistik.html" class="nav-link active">Statistik</a></li>
+            </ul>
+        </nav>
+        <!-- <button class="action-btn" id="portalBtn">Masuk Portal</button> -->
+    </div>
+</header>
+<!-- header tutup -->
+
+<main class="content-area">
+   <main class="container">
+
+
+        <!-- =========================================
+             3 KARTU STATISTIK
+             ========================================= -->
+
+        <section class="statistics-container">
+
+
+            <!-- TOTAL TUGAS -->
+
+            <div class="stat-card total">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <div class="stat-content">
+
+                    <p class="stat-label">
+                        TOTAL TUGAS
+                    </p>
+
+                    <h2 id="totalTasks">
+                        0
+                    </h2>
+
+                    <span>
+                        Seluruh tugas
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TUGAS SELESAI -->
+
+            <div class="stat-card completed">
+
+                <div class="stat-icon">
+                    ✅
+                </div>
+
+                <div class="stat-content">
+
+                    <p class="stat-label">
+                        TUGAS SELESAI
+                    </p>
+
+                    <h2 id="completedTasks">
+                        0
+                    </h2>
+
+                    <span>
+                        Tugas telah selesai
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEADLINE MEPET -->
+
+            <div class="stat-card urgent">
+
+                <div class="stat-icon">
+                    ⚠️
+                </div>
+
+                <div class="stat-content">
+
+                    <p class="stat-label">
+                        DEADLINE MEPET
+                    </p>
+
+                    <h2 id="urgentTasks">
+                        0
+                    </h2>
+
+                    <span>
+                        Belum selesai
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================================
+             RIWAYAT TUGAS SELESAI
+             ========================================= -->
+
+        <section class="history-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Riwayat Tugas Selesai
+                    </h2>
+
+                    <p>
+                        Daftar tugas yang telah kamu selesaikan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 DAFTAR RIWAYAT
+                 ===================================== -->
+
+            <div id="historyList" class="history-list">
+
+                <!-- Data riwayat akan dimasukkan
+                     melalui JavaScript -->
+
+            </div>
+
+
+            <!-- =====================================
+                 PESAN JIKA BELUM ADA TUGAS SELESAI
+                 ===================================== -->
+
+            <div id="emptyHistory" class="empty-history hidden">
+
+                <div class="empty-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Belum ada tugas yang diselesaikan.
+                </h3>
+
+                <p>
+                    Tugas yang sudah selesai akan muncul di sini.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+</main>
+
+<!-- footer -->
+<footer>
+    @withkelompoktiga.entertainment
+</footer>
+<!-- footer tutup -->
+ <script src="js/statistik.js"></script>
+</body>
+</html>

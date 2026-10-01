@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <link rel="stylesheet" href="css/tugas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<header class="office-header">
+    <div class="nav-container">
+        <a href="#" class="logo">Kelompok<span>kosong3</span></a>
+        <!-- Menu Navigasi -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tugas.html" class="nav-link active">Tugas</a></li>
+                <li><a href="monitoring.html" class="nav-link">Monitoring</a></li>
+                <li><a href="statistik.html" class="nav-link">Statistik</a></li>
+            </ul>
+        </nav>
+        <!-- <button class="action-btn" id="portalBtn">Masuk Portal</button> -->
+    </div>
+</header>
+<!-- header tutup -->
+
+<main class="content-area">
+   <h1>Manajemen Tugas</h1>
+    <p>Kelola dan pantau tugas kuliahmu dengan mudah</p>
+
+    <div class="form-tugas">
+    <h2>Tambah Tugas</h2>
+
+    <form id="form-tambah-tugas">
+
+        <div class="form-group">
+            <label for="input-tanggal">Tanggal</label>
+            <input type="date" id="input-tanggal" name="tanggal" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input-hari">Hari</label>
+            <input type="text" id="input-hari" name="hari"
+                   placeholder="Contoh: Senin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input-pemberi">Pemberi Tugas</label>
+            <input type="text" id="input-pemberi" name="pemberi"
+                   placeholder="Contoh: Dosen" required>
+        </div>
+
+        <div class="form-group">
+            <label for="input-tugas">Nama / Deskripsi Tugas</label>
+            <textarea id="input-tugas" name="tugas"
+                      placeholder="Masukkan nama atau deskripsi tugas"
+                      required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="input-deadline">Deadline</label>
+            <input type="date" id="input-deadline" name="deadline" required>
+        </div>
+
+        <button type="submit" id="btn-tambah-tugas">
+            + Tambah Tugas
+        </button>
+
+    </form>
+</div>
+
+<!-- Daftar tugas -->
+<div class="daftar-tugas">
+    <h2>Daftar Tugas</h2>
+
+    <div id="list-tugas">
+        <!-- Data tugas akan dibuat otomatis oleh JavaScript -->
+    </div>
+</div>
+</main>
+
+<!-- footer -->
+<footer>
+    @withkelompoktiga.entertainment
+</footer>
+<!-- footer tutup -->
+     <script src="js/tugas.js"></script>
+</body>
+</html>

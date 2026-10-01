@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #334155;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Navigasi Kantor */
+.office-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #0284c7;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: #22c55e;
+}
+
+/* Daftar Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+/* Tautan Menu */
+.nav-link {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Efek Garis Bawah saat Hover (Warna Biru) */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #0284c7;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0284c7;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Tombol Aksi Korporat (Warna Biru dengan Aksen Hijau) */
+.action-btn {
+  margin: 20px;
+  background-color: #0284c7;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Efek saat tombol disentuh mouse (Berubah ke hijau muda segar) */
+.action-btn:hover {
+  background-color: #16a34a;
+  transform: translateY(-1px);
+}
+
+/* Area Konten Contoh */
+.content-area {
+  margin-top: 140px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.content-area h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.content-area p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.transisi {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: static;
+  font-size: small;
+  margin-top: auto;
+}
+/* ================================
+HALAMAN MANAJEMEN TUGAS
+================================ */
+
+.tugas-page {
+  padding: 20px;
+}
+
+/* Form tambah tugas */
+.form-tugas {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-tugas h2,
+.daftar-tugas h2 {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Tombol tambah tugas */
+#btn-tambah-tugas {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+#btn-tambah-tugas:hover {
+  background-color: #1d4ed8;
+}
+
+/* Daftar/card tugas */
+#list-tugas {
+  display: grid;
+  gap: 15px;
+}
+
+.task-card {
+  background-color: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.task-info p {
+  margin: 8px 0;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Tombol edit */
+.btn-edit-tugas {
+  background-color: #395cea;
+  color: white;
+}
+
+/* Tombol hapus */
+.btn-hapus-tugas {
+  background-color: #dc2626;
+  color: white;
+}
+
+/* Tombol selesai */
+.btn-selesai-tugas {
+  background-color: #13c655;
+  color: white;
+}
