@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring</title>
+    <link rel="stylesheet" href="css/monitoring.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<header class="office-header">
+    <div class="nav-container">
+        <a href="#" class="logo">Kelompok<span>kosong3</span></a>
+        <!-- Menu Navigasi -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tugas.html" class="nav-link">Tugas</a></li>
+                <li><a href="monitoring.html" class="nav-link active">Monitoring</a></li>
+                <li><a href="statistik.html" class="nav-link">Statistik</a></li>
+            </ul>
+        </nav>
+        <!-- <button class="action-btn" id="portalBtn">Masuk Portal</button> -->
+    </div>
+</header>
+<!-- header tutup -->
+
+<main class="content-area">
+   <!-- ==============================
+         KONTEN UTAMA
+         ============================== -->
+    <main class="container">
+      <!-- Peringatan deadline dekat -->
+      <div id="deadlineAlert" class="deadline-alert hidden">
+        ⚠️ <strong>Perhatian!</strong>
+        Ada tugas yang deadline-nya sudah dekat.
+      </div>
+
+      <!-- Informasi jumlah tugas -->
+      <div class="monitoring-info">
+        <h2>Tugas Belum Selesai</h2>
+        <span id="taskCount">0 tugas</span>
+      </div>
+
+      <!-- ==============================
+             DAFTAR TUGAS
+             Data akan dimasukkan melalui JavaScript
+             ============================== -->
+      <section id="taskList" class="task-list">
+        <!-- Contoh:
+            <div class="task-card">
+                ...
+            </div>
+            -->
+      </section>
+
+      <!-- Pesan ketika tidak ada tugas -->
+      <div id="emptyMessage" class="empty-message hidden">
+        <div class="empty-icon">🎉</div>
+        <h3>Semua tugas sudah selesai!</h3>
+        <p>Tidak ada tugas yang perlu dimonitor saat ini.</p>
+      </div>
+    </main>
+</main>
+
+<!-- footer -->
+<footer>
+    @withkelompoktiga.entertainment
+</footer>
+<!-- footer tutup -->
+     <script src="js/monitoring.js"></script>
+</body>
+</html>
