@@ -8,6 +8,15 @@ function saveTasks() {
 }
 
 const STORAGE_KEY = "studymate_tasks";
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburgerBtn.addEventListener('click', function() {
+    // Menambahkan atau menghapus kelas 'active' pada menu
+    navMenu.classList.toggle('active');
+});
+
 /* =========================================
    SAAT HALAMAN SELESAI DIMUAT
    ========================================= */
@@ -49,42 +58,6 @@ function createExampleData() {
         pemberi: "Bu Fitri",
         tanggal: "2026-09-27",
         deadline: "2026-09-28",
-        status: "Belum Selesai",
-      },
-
-      {
-        id: 2,
-        nama: "Pancasila",
-        pemberi: "Bu Atika",
-        tanggal: "2026-09-28",
-        deadline: "2026-09-29",
-        status: "Belum Selesai",
-      },
-
-      {
-        id: 3,
-        nama: "Makalah Pancasila",
-        pemberi: "Bu Siti",
-        tanggal: "2026-09-25",
-        deadline: "2026-10-02",
-        status: "Belum Selesai",
-      },
-
-      {
-        id: 4,
-        nama: "Presentasi Bahasa Inggris",
-        pemberi: "Bu Rina",
-        tanggal: "2026-09-22",
-        deadline: "2026-10-05",
-        status: "Selesai",
-      },
-
-      {
-        id: 5,
-        nama: "Latihan Kalkulus Dasar",
-        pemberi: "Pak Ahmad",
-        tanggal: "2026-09-20",
-        deadline: "2026-10-15",
         status: "Belum Selesai",
       },
     ];
@@ -237,7 +210,7 @@ function createTaskCard(task) {
             <div>
 
                 <h3 class="task-title">
-                    ${escapeHTML(task.nama)}
+                    ${escapeHTML(task.tugas)}
                 </h3>
 
                 <p class="task-giver">

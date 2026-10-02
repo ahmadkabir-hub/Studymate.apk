@@ -13,6 +13,13 @@ function saveTasks() {
     localStorage.setItem("studymate_tasks", JSON.stringify(tasks));
 }
 
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburgerBtn.addEventListener('click', function() {
+    // Menambahkan atau menghapus kelas 'active' pada menu
+    navMenu.classList.toggle('active');
+});
 
 // ==================================================
 // 2. HALAMAN TUGAS

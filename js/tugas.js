@@ -1,5 +1,13 @@
 const STORAGE_KEY = "studymate_tasks";
 
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburgerBtn.addEventListener('click', function() {
+    // Menambahkan atau menghapus kelas 'active' pada menu
+    navMenu.classList.toggle('active');
+});
+
 // ================================
 // AMBIL DATA DARI LOCAL STORAGE
 // ================================
@@ -97,17 +105,6 @@ tasks.forEach(function (task) {
                 </span>
             </p>
 
-            <p>
-                <strong>Status:</strong>
-                <span class="task-status">
-                    ${
-                        task.status === "selesai"
-                            ? "Selesai"
-                            : "Belum"
-                    }
-                </span>
-            </p>
-
         </div>
 
         <div class="task-actions">
@@ -124,17 +121,6 @@ tasks.forEach(function (task) {
                 class="btn-hapus-tugas"
                 data-task-id="${task.id}">
                 Hapus
-            </button>
-
-            <button
-                type="button"
-                class="btn-selesai-tugas"
-                data-task-id="${task.id}">
-                ${
-                    task.status === "selesai"
-                        ? "Tandai Belum Selesai"
-                        : "Tandai Selesai"
-                }
             </button>
 
         </div>
