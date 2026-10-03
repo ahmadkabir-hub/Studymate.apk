@@ -502,7 +502,7 @@ function editTask(id) {
     return;
   }
 
-  task.nama = newName.trim();
+  task.tugas = newName.trim();
 
   /*
        Simpan perubahan.
