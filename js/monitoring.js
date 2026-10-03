@@ -496,7 +496,7 @@ function editTask(id) {
        halaman/form tersebut.
     */
 
-  const newName = prompt("Edit nama tugas:", task.nama);
+  const newName = prompt("Edit nama tugas:", task.tugas);
 
   if (newName === null || newName.trim() === "") {
     return;
